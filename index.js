@@ -5,7 +5,7 @@ function moveDodgerLeft() {
   let left = parseInt(leftNumbers, 10)
  
   if (left > 0) {
-    element.style.left = `${left - 10}px`
+    element.style.left = `${left - 1}px`
   }
 }
 
@@ -14,7 +14,7 @@ function moveDodgerUp() {
   let top = parseInt(topNumbers, 10)
  
   if (top < 400) {
-    element.style.bottom = `${top + 10}px`
+    element.style.bottom = `${top + 1}px`
   }
 }
 
@@ -23,7 +23,7 @@ function moveDodgerRight(){
   let right = parseInt(rightNumbers, 10)
  
   if (right < 360) {
-    element.style.left = `${right + 10}px`
+    element.style.left = `${right + 1}px`
   }
 }
 
