@@ -9,8 +9,8 @@ function moveDodgerLeft() {
   }
 }
 
-function moveDodgerLeft() {
-  var leftNumbers = element.style.left.replace('px', '')
+function moveDodgerUp() {
+  var leftNumbers = element.style.top.replace('px', '')
   var left = parseInt(leftNumbers, 10)
  
   if (left > 0) {
