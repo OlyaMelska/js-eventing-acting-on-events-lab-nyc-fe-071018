@@ -13,7 +13,7 @@ function moveDodgerUp() {
   let topNumbers = element.style.bottom.replace('px', '')
   let top = parseInt(topNumbers, 10)
  
-  if (top < 440) {
+  if (top < 400) {
     element.style.bottom = `${top + 10}px`
   }
 }
