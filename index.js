@@ -36,7 +36,7 @@ document.addEventListener('keydown', (event) => {
     moveDodgerRight()
    
   }
-  else if(event.which === 39){
+  else if(event.which === 38){
     moveDodgerRight()
    
   }
