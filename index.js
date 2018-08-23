@@ -10,11 +10,11 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerUp() {
-  var leftNumbers = element.style.top.replace('px', '')
-  var left = parseInt(leftNumbers, 10)
+  var topNumbers = element.style.top.replace('px', '')
+  var top = parseInt(topNumbers, 10)
  
-  if (left > 0) {
-    element.style.top = `${left - 10}px`
+  if (top > 0) {
+    element.style.top = `${top - 10}px`
   }
 }
 
