@@ -13,9 +13,9 @@ function moveDodgerUp() {
   var topNumbers = element.style.top.replace('px', '')
   var top = parseInt(topNumbers, 10)
  
-  if (top > 0) {
+  //if (top > 0) {
     element.style.top = `${top + 10}px`
-  }
+  //}
 }
 
 function moveDodgerRight(){
