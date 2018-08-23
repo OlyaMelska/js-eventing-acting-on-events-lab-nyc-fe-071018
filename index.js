@@ -10,10 +10,10 @@ function moveDodgerLeft() {
 }
 
 function moveDodgerRight(){
-  let rightNumbers = element.style.left.replace('px', '')
-  let right = parseInt(rightNumbers, 10)
+  var leftNumbers = element.style.left.replace('px', '')
+  var left = parseInt(leftNumbers, 10)
  
-  if (right > 0) {
+  if (left > 0) {
     element.style.left = `${left + 1}px`
   }
 }
