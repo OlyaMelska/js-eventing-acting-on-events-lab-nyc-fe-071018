@@ -1,28 +1,34 @@
-let dodger = document.getElementById('dodger')
-
+let element = document.getElementById('dodger')
+/*
 function moveDodgerLeft() {
-  var leftNumbers = dodger.style.left.replace('px', '')
+  var leftNumbers = element.style.left.replace('px', '')
   var left = parseInt(leftNumbers, 10)
  
   if (left > 0) {
-    dodger.style.left = `${left - 1}px`
+    element.style.left = `${left - 1}px`
   }
 }
 
 function moveDodgerRight(){
-  let rightNumbers = dodger.style.right.replace('px', '')
+  let rightNumbers = element.style.right.replace('px', '')
   let right = parseInt(rightNumbers, 10)
  
   if (right > 0) {
-    dodger.style.right = `${right - 1}px`
+    element.style.right = `${right - 1}px`
   }
 }
-
-document.addEventListener('keydown', function(e) {
-  if (e.which === 37) {
-    moveDodgerLeft()
+*/
+document.addEventListener('keydown', (event) => {
+  if (event.which === 37) {
+    //moveDodgerLeft()
+    let previousLeft = element.style.left
+    let previousLeftNumber = parseInt(previousLeft.replace('px', ''), 10)
+    if(previousLeftNumber > 0){
+      let newLeftNumber = (previousLeftNumber - 10) + 'px';
+      element.style.left = newLeftNumber
+    }
   }
-  if (e.which === 39){
+  if (event.which === 39){
     moveDodgerRight()
   }
 })
