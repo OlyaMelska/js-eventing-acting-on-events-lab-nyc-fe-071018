@@ -14,7 +14,7 @@ function moveDodgerUp() {
   var left = parseInt(leftNumbers, 10)
  
   if (left > 0) {
-    element.style.left = `${left - 1}px`
+    element.style.left = `${left - 10}px`
   }
 }
 
