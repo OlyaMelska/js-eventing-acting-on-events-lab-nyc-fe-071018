@@ -4,7 +4,7 @@ function moveDodgerLeft() {
   var leftNumbers = element.style.left.replace('px', '')
   var left = parseInt(leftNumbers, 10)
  
-  if (left > 0) {
+  if (left < 400) {
     element.style.left = `${left - 1}px`
   }
 }
