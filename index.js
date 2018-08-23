@@ -21,21 +21,10 @@ function moveDodgerRight(){
 document.addEventListener('keydown', (event) => {
   if (event.which === 37) {
     //moveDodgerLeft()
-    let previousLeft = element.style.left
-    let previousLeftNumber = parseInt(previousLeft.replace('px', ''), 10)
-    if(previousLeftNumber > 0){
-      let newLeftNumber = (previousLeftNumber - 1) + 'px';
-      element.style.left = newLeftNumber
-    }
   }
-  if (event.which === 39){
-    //moveDodgerRight()
-    let previousLeft = element.style.left
-    let previousLeftNumber = parseInt(previousLeft.replace('px', ''), 10)
-    if(previousLeftNumber > 0){
-      let newLeftNumber = (previousLeftNumber - 1) + 'px';
-      element.style.left = newLeftNumber
-    }
+  else if (event.which === 39){
+    moveDodgerRight()
+   
   }
 })
 
